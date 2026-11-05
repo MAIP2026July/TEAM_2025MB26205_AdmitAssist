@@ -1,0 +1,16 @@
+{
+  "_note": "Rules-only reader used as the 'simpler alternative' in the evaluation. Written by me before any AI results existed, in about an hour, the way a careful office would write keyword rules. The same priority points and keyword safety net from school_profile.json are applied on top.",
+  "version": "1.0.0",
+  "not_admission": ["vacancy", "job", "resume", "cv", "teacher post", "teaching post", "homework", "transfer certificate", "tc copy", "bonafide", "study certificate", "our product", "special offer", "promotion", "forwarded", "uniform supplier", "books supplier", "already studying in your school"],
+  "timeframe_later": ["2028", "2029", "next to next year", "after two years", "after 2 years"],
+  "timeframe_immediate": ["immediately", "urgent", "urgently", "asap", "next week", "this week", "this month", "from monday", "mid year", "mid-year", "midyear", "join now", "joining now", "right away", "as soon as possible"],
+  "timeframe_next_session": ["next year", "next academic year", "2027", "june", "new session", "coming year", "next session", "2027-28"],
+  "signals": {
+    "wants_campus_visit": ["visit", "tour", "come and see", "see the school", "campus", "meet the principal", "appointment"],
+    "asks_application_or_documents": ["application", "form", "documents", "apply", "admission procedure", "process"],
+    "relocation_or_transfer": ["shifting", "relocating", "relocate", "moving to", "job transfer", "transferred"],
+    "sibling_in_school": ["sibling", "elder son", "elder daughter", "brother is studying", "sister is studying", "brother studies", "sister studies"],
+    "follow_up_on_earlier_message": ["any update", "no reply", "still waiting", "no response", "reminder", "did not get", "didn't get", "didnt get", "messaged on", "called yesterday"],
+    "explicitly_exploratory": ["just enquiring", "just asking", "exploring", "will decide", "collecting", "comparing", "just checking"]
+  }
+}

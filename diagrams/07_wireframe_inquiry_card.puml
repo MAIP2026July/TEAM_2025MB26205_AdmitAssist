@@ -1,0 +1,38 @@
+@startsalt 07_wireframe_inquiry_card
+' Wireframe: one inquiry card (V1). Author: G S N J Teja (2025MB26205). v1.0. Built for real in prototype/index.html.
+{+
+  { <color:#c62828><b>HIGH priority</b></color> | INQ-004 - WhatsApp - received 08 Nov, 10:15 pm | Reply by <b>09 Nov, 11:00 am</b> }
+  ==
+  {
+    {+
+      <b>Message</b>
+      Good evening sir... My husband got transferred from Bengaluru,
+      we are shifting by end of this month. Son is in 6th std CBSE...
+      [ ] Show what the AI saw (phone numbers hidden)
+      ..
+      <b>Why this priority</b>
+      Score +1: It is an admission inquiry
+      Score +4: Wants to join within 60 days  'need admission from December itself'
+      Score +1: Family is relocating  'My husband got transferred from Bengaluru'
+      Score +1: Class 6 is offered  'Son is in 6th std CBSE'
+      Total 7 (HIGH at 4 or more). Rules: HIGH, AI suggested: HIGH
+    } | {+
+      <b>What AdmitAssist read</b>
+      Class | Class 6 | <color:green>Sure</color>
+      When | Wants to join soon | <color:green>Sure</color>
+      Phone | 9845123760 (fixed pattern, not AI)
+      Confidence | HIGH
+      ..
+      <b>Change priority</b>
+      ^Keep^ | "Reason (required)" | [Save]
+    }
+  }
+  ==
+  {+
+    <b>Draft reply (AI) - read and edit before sending</b>
+    {+ "Dear Parent, thank you for your message. Class 6 admissions..." }
+    <color:green>All checks passed - 88 words</color>
+    [Approve and copy] | [Open in WhatsApp] | [Write again (3 left)] | [Reject draft, write my own] | [Mark done]
+  }
+}
+@endsalt

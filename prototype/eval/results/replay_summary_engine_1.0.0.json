@@ -1,0 +1,148 @@
+{
+  "mode": "replay",
+  "engine_version": "1.0.0",
+  "profile_version": "1.0.0",
+  "n": 48,
+  "generated_at": "2026-11-02T08:50:21.591Z",
+  "recorded_label": "stand-in assistant model, recorded 2 Nov 2026 (prompts read_v1 / draft_v1)",
+  "sensitive_recall": {
+    "hit": 10,
+    "of": 10
+  },
+  "sensitive_recall_by_category": {
+    "complaint": {
+      "hit": 3,
+      "of": 3
+    },
+    "fee_concession": {
+      "hit": 3,
+      "of": 3
+    },
+    "special_needs": {
+      "hit": 3,
+      "of": 3
+    },
+    "safety": {
+      "hit": 1,
+      "of": 1
+    }
+  },
+  "sensitive_false_alarms": {
+    "hit": 1,
+    "of": 38
+  },
+  "sensitive_given_ai_draft": 0,
+  "route_accuracy": {
+    "hit": 47,
+    "of": 48
+  },
+  "not_admission_recall": {
+    "hit": 7,
+    "of": 8
+  },
+  "needs_review_route": 0,
+  "priority_exact": {
+    "hit": 30,
+    "of": 30
+  },
+  "priority_within_one": {
+    "hit": 30,
+    "of": 30
+  },
+  "high_recall": {
+    "hit": 11,
+    "of": 11
+  },
+  "dangerous_misses": [],
+  "priority_confusion": {
+    "HIGH": {
+      "HIGH": 11,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "OTHER_ROUTE": 0
+    },
+    "MEDIUM": {
+      "HIGH": 0,
+      "MEDIUM": 11,
+      "LOW": 0,
+      "OTHER_ROUTE": 0
+    },
+    "LOW": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 8,
+      "OTHER_ROUTE": 0
+    }
+  },
+  "grade_accuracy": {
+    "hit": 40,
+    "of": 40
+  },
+  "grade_accuracy_when_stated": {
+    "hit": 37,
+    "of": 37
+  },
+  "phone_accuracy": {
+    "hit": 48,
+    "of": 48
+  },
+  "timeframe_accuracy": {
+    "hit": 30,
+    "of": 30
+  },
+  "needs_review": {
+    "hit": 6,
+    "of": 48
+  },
+  "priority_by_language": {
+    "English": {
+      "hit": 18,
+      "of": 18
+    },
+    "Telugu / Telugu-English": {
+      "hit": 6,
+      "of": 6
+    },
+    "Hindi / Hinglish": {
+      "hit": 6,
+      "of": 6
+    }
+  },
+  "drafts": {
+    "produced": 30,
+    "passed_checks": 27,
+    "passed_first_try": 27,
+    "avg_words": 79,
+    "max_words": 112,
+    "violations": [
+      {
+        "id": "INQ-027",
+        "violations": [
+          "Year not in school facts: 2029"
+        ]
+      },
+      {
+        "id": "INQ-033",
+        "violations": [
+          "Year not in school facts: 2028"
+        ]
+      },
+      {
+        "id": "INQ-036",
+        "violations": [
+          "Time not in school facts: 11:00 AM"
+        ]
+      }
+    ]
+  },
+  "cost": {
+    "calls": 78,
+    "input_tokens": 84649,
+    "output_tokens": 15463,
+    "inr_total": 15.38,
+    "inr_per_inquiry": 0.32,
+    "estimated": true,
+    "price_model": "gpt-6.1-terra"
+  },
+  "errors": []
+}

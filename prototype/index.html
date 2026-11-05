@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdmitAssist - admissions inbox (prototype v1.0)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <strong>AdmitAssist</strong>
+    <span class="sub">Admissions inbox for the school office - prototype v1.0</span>
+  </div>
+  <div class="status">
+    <span id="modeBadge" class="badge">Mode</span>
+    <span id="costBadge" class="badge light" title="AI cost of this session">AI cost Rs 0.00</span>
+  </div>
+  <nav class="tabs">
+    <button data-tab="inbox" class="active">Inbox</button>
+    <button data-tab="log">Activity log</button>
+    <button data-tab="settings">School settings</button>
+    <button data-tab="connection">AI connection</button>
+    <button data-tab="about">About this prototype</button>
+  </nav>
+</header>
+
+<main>
+  <!-- INBOX -->
+  <section id="tab-inbox" class="tab">
+    <div class="layout">
+      <aside class="queue">
+        <div class="queue-actions">
+          <button id="btnNew" class="primary">+ New inquiry</button>
+          <button id="btnLoadSamples" title="Loads 48 written sample messages with recorded AI responses">Load sample messages</button>
+        </div>
+        <div class="filters" id="filters">
+          <button data-f="open" class="active">Open</button>
+          <button data-f="review">Needs review</button>
+          <button data-f="HIGH">High</button>
+          <button data-f="STAFF_ONLY">Staff only</button>
+          <button data-f="done">Done</button>
+          <button data-f="all">All</button>
+        </div>
+        <p class="hint">Sorted by "reply by" time. Overdue messages turn red.</p>
+        <ol id="queueList" class="queue-list"></ol>
+      </aside>
+
+      <section class="detail" id="detail">
+        <div class="empty">
+          <h2>Nothing selected</h2>
+          <p>Paste a new inquiry with <b>+ New inquiry</b>, or click <b>Load sample messages</b> to try the 48 written examples.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- NEW INQUIRY DIALOG -->
+  <dialog id="dlgNew">
+    <form method="dialog" id="formNew">
+      <h3>New inquiry</h3>
+      <label>Where did it come from?
+        <select id="newChannel">
+          <option value="whatsapp_text">WhatsApp message</option>
+          <option value="whatsapp_voice_transcript">WhatsApp voice note (typed out)</option>
+          <option value="phone_call_note">Phone call (my notes)</option>
+          <option value="walk_in_note">Walk-in (my notes)</option>
+          <option value="web_form">Website form</option>
+          <option value="email">E-mail</option>
+        </select>
+      </label>
+      <label>Received at <input type="datetime-local" id="newReceived"></label>
+      <label>Message exactly as received
+        <textarea id="newText" rows="7" placeholder="Paste the parent's message here"></textarea>
+      </label>
+      <p class="hint">Phone numbers and e-mails are hidden before the message goes to the AI.</p>
+      <div class="row-end">
+        <button value="cancel" formnovalidate>Cancel</button>
+        <button id="btnRead" value="read" class="primary">Read inquiry</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- LOG -->
+  <section id="tab-log" class="tab hidden">
+    <h2>Activity log</h2>
+    <p class="hint">Every staff action is recorded here. These numbers are the pilot metrics in 05_Data_Model_Evaluation.md.</p>
+    <div id="logStats" class="stats"></div>
+    <div class="row-end"><button id="btnExport">Download log (CSV)</button> <button id="btnClear" class="danger">Clear all data in this browser</button></div>
+    <div class="table-wrap"><table id="logTable"></table></div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="tab-settings" class="tab hidden">
+    <h2>School settings</h2>
+    <p class="hint">Everything school-specific lives here: classes, seats, fee ranges, documents, keywords for sensitive topics, priority points, reply rules, AI model and prices. Changing it needs no code change.</p>
+    <h3>Quick settings</h3>
+    <div id="quickSettings"></div>
+    <h3>Full settings (JSON)</h3>
+    <textarea id="profileEditor" rows="24" spellcheck="false"></textarea>
+    <div id="profileMsg" class="msg"></div>
+    <div class="row-end">
+      <button id="btnValidate">Check</button>
+      <button id="btnSaveProfile" class="primary">Save</button>
+      <button id="btnResetProfile">Reset to file version</button>
+      <button id="btnDownloadProfile">Download</button>
+    </div>
+  </section>
+
+  <!-- CONNECTION -->
+  <section id="tab-connection" class="tab hidden">
+    <h2>AI connection</h2>
+    <fieldset>
+      <legend>Mode</legend>
+      <label class="inline"><input type="radio" name="mode" value="recorded" checked> Recorded demo (no key needed; only the 48 sample messages have AI responses)</label>
+      <label class="inline"><input type="radio" name="mode" value="live"> Live AI (needs an API key)</label>
+    </fieldset>
+    <fieldset id="liveFields">
+      <legend>Live AI settings</legend>
+      <label>Service address (OpenAI-compatible) <input id="cfgBase" type="text"></label>
+      <label>Model <input id="cfgModel" type="text"></label>
+      <label>API key <input id="cfgKey" type="password" autocomplete="off" placeholder="Kept only in this browser tab; cleared when the tab closes"></label>
+      <p class="hint">Prototype only: the key sits in this tab's session storage. In the pilot build the key stays on a small server and never reaches the office computer.</p>
+      <div class="row-end"><button id="btnSaveConn" class="primary">Save</button> <button id="btnTestConn">Test connection</button></div>
+      <div id="connMsg" class="msg"></div>
+    </fieldset>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="tab-about" class="tab hidden">
+    <h2>About this prototype</h2>
+    <div id="aboutBody"></div>
+  </section>
+</main>
+
+<script src="bundle.js" onerror="this.remove()"></script>
+<script src="lib/engine.js"></script>
+<script src="lib/llm.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

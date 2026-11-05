@@ -1,0 +1,27 @@
+@startuml 03_inquiry_states
+' States of one inquiry inside AdmitAssist V1. Author: G S N J Teja (2025MB26205). v1.0
+title Inquiry states (V1)
+skinparam defaultFontName Arial
+[*] --> Pasted : coordinator pastes or types
+Pasted --> Reading : rules R1-R3 run
+Reading --> NeedsReview : AI failed twice
+Reading --> StaffOnly : sensitive (rules or AI)
+Reading --> NotAdmission : AI sure, intent >= 0.8
+Reading --> DraftReady : admission inquiry, draft written
+DraftReady --> DraftReady : staff edits / "Write again" (max 3)
+DraftReady --> Replied : staff approves and sends from WhatsApp
+DraftReady --> Replied : staff rejects draft and sends own reply
+NeedsReview --> Replied : staff replies personally
+StaffOnly --> Replied : coordinator or principal replies
+NotAdmission --> Closed : passed to the right person
+Replied --> Closed : marked done
+Closed --> Reopened : same mobile writes again within 14 days\n(the new message is read as its own linked inquiry)
+Reopened --> Closed : staff reply to the new inquiry
+Closed --> [*]
+note right of DraftReady
+  Overdue when the reply-by time passes:
+  HIGH 2 h, MEDIUM 8 h, LOW 24 h,
+  Staff only 8 h, Needs review 2 h
+  (working hours, Mon-Sat 9:00-16:30, from settings)
+end note
+@enduml

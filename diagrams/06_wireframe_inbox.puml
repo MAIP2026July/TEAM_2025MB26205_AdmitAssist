@@ -1,0 +1,26 @@
+@startsalt 06_wireframe_inbox
+' Wireframe: inbox screen (V1). Author: G S N J Teja (2025MB26205). v1.0. Built for real in prototype/index.html.
+{+
+  {* AdmitAssist | Inbox | Activity log | School settings | AI connection | About }
+  {
+    [+ New inquiry] | [Load sample messages] | Mode: Live AI | AI cost Rs 12.40
+  }
+  ==
+  {
+    {/ <b>Open | Needs review | High | Staff only | Done | All }
+    {SI
+      <color:#c62828><b>HIGH</b></color> Class 6 - reply by 02 Nov, 12:00 pm
+      Husband transferred from Bengaluru, needs Class 6 from December
+      ..
+      <color:#6a1b9a><b>STAFF ONLY</b></color> - reply by 02 Nov, 4:30 pm
+      Money is tight after surgery, can you help...
+      ..
+      <color:#e65100><b>MEDIUM</b></color> <color:#f9a825>CHECK</color> UKG - reply by 03 Nov, 10:00 am
+      maa papa ki UKG lo seat undha? fees entha?
+      ..
+      <color:#546e7a><b>LOW</b></color> Class 11 - reply by 04 Nov, 9:30 am
+      do you have inter first year MPC
+    }
+  }
+}
+@endsalt

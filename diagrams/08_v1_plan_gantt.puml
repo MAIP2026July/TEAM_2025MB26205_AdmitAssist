@@ -1,0 +1,15 @@
+@startgantt 08_v1_plan_gantt
+' V1 plan to first revenue. Author: G S N J Teja (2025MB26205). v1.0. About 10 hours per week alongside my job.
+title AdmitAssist V1 - path to the first paying school
+Project starts 2026-11-02
+printscale weekly
+[P0 Ground truth - 100 real messages labelled, timings, settings] starts 2026-11-02 and ends 2026-11-15
+[P1 Pilot build - proxy, login, storage, live test on 100 messages] starts 2026-11-16 and ends 2026-12-06
+[Gate A - launch checks pass] happens 2026-12-06
+[P2 Shadow run at my father's school] starts 2026-12-07 and ends 2026-12-20
+[Gate B - shadow results meet targets] happens 2026-12-20
+[P3 Assisted pilot (drafts used for real)] starts 2026-12-21 and ends 2027-02-28
+[P4 Sell - 10 demos, 3 paying schools] starts 2027-01-18 and ends 2027-03-31
+[First invoice] happens 2027-03-01
+[Go / no-go for V2] happens 2027-02-28
+@endgantt

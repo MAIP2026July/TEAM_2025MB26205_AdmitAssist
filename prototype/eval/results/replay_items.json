@@ -1,0 +1,2152 @@
+[
+  {
+    "id": "INQ-001",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": "9346508172",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Vendor sales pitch; the discount is the vendor's offer, not a fee request."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "sensitive_source": [
+        "keyword list (\"discount\")"
+      ],
+      "grade": null,
+      "phone": "9346508172",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-05T10:45:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1291,
+      "output_tokens": 218,
+      "inr": 0.226,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-002",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Bare request with no grade or timeframe, so staff must ask for details."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-07T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. We are a CBSE school with English as the medium of instruction. Admissions are open from Nursery to Class 7, and the office will confirm seats for Class 8 and Class 9. Could you please tell us which class your child needs? We will then share the details for that class. You are also welcome to visit the campus, Monday to Saturday, between 10:00 AM and 12:00 PM, or call our office on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 90,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 1954,
+      "output_tokens": 332,
+      "inr": 0.343,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-003",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 11",
+      "phone": "9666304172",
+      "timeframe": "NEXT_SESSION",
+      "language": "te-en",
+      "why": "Inter first year (Class 11) is not offered; 10th is only the current class."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 11",
+      "phone": "9666304172",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-12T10:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for contacting Greenfield Public School. We are sorry, but Class 11 (Inter first year) is not offered at our school, so we will not be able to help with MPC admission for your son. We wish him all the very best for his studies and his next steps.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 57,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2007,
+      "output_tokens": 305,
+      "inr": 0.336,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-004",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 6",
+      "phone": "9845123760",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Job transfer from Bengaluru and wants to join Class 6 in December, within 60 days."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 6",
+      "phone": "9845123760",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 7,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-09T11:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your message, and please do not worry about the timing. Greenfield Public School follows the CBSE board. Mid-year admission for the 2026-27 session is possible in Class 6 if a seat is available, and our office will check and confirm seat availability with you. You are welcome to visit the campus with your son, Monday to Saturday, between 10:00 AM and 12:00 PM. You can also call us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 88,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2068,
+      "output_tokens": 388,
+      "inr": 0.381,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-005",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "LKG",
+      "phone": "9391876024",
+      "timeframe": "NEXT_SESSION",
+      "language": "hinglish",
+      "why": "Two children (LKG and Class 5), grade is the first child mentioned (LKG); general fee and transport questions for next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": "9391876024",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [
+        "More than one child mentioned (also Class 5)."
+      ],
+      "notes": [],
+      "needs_review": true,
+      "due_by": "2026-11-12T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for considering Greenfield Public School for both your children. The yearly fee for LKG is in the range of Rs 18000 to Rs 22000, and for Class 5 it is Rs 24000 to Rs 28000. Transport and books are charged separately, and exact fee details are shared during the campus visit. Our school bus covers areas within 10 km of the campus, and the office will confirm on a call or during the campus visit whether Housing Board colony is covered. Campus visits are Monday to Saturday, 10:00 AM to 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 101,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2064,
+      "output_tokens": 385,
+      "inr": 0.379,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-006",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Existing parent asking about homework for an enrolled child."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-17T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1228,
+      "output_tokens": 238,
+      "inr": 0.23,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-007",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Follow-up chasing an earlier unanswered inquiry; no grade or number given."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-16T11:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nWe are sorry for the delay in replying to you. Could you please tell us which class your daughter needs admission in? Once we know this, our office will call you and share the details. You can also call us directly on 08612345678, Monday to Saturday, between 9:00 AM and 4:30 PM, or visit the campus, Monday to Saturday, between 10:00 AM and 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 72,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2004,
+      "output_tokens": 345,
+      "inr": 0.354,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-008",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "grade": "LKG",
+      "phone": "9441782350",
+      "timeframe": "NEXT_SESSION",
+      "language": "te-en",
+      "why": "Indirect complaint that a teacher scolded the elder son in public; STAFF_ONLY wins over the LKG inquiry."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "sensitive_source": [
+        "AI reading"
+      ],
+      "grade": "LKG",
+      "phone": "9441782350",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-18T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1274,
+      "output_tokens": 263,
+      "inr": 0.246,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-009",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Nursery",
+      "phone": "9963048127",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Asks to book a campus visit slot for Nursery in the 2027-28 session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Nursery",
+      "phone": "9963048127",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-17T11:05:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for considering Greenfield Public School for your daughter. Nursery admissions are open for the 2027-28 session, which starts on 1 June 2027. Our campus visit slots are Monday to Saturday, from 10:00 AM to 12:00 PM, so you are welcome to visit this Saturday between 10:00 AM and 12:00 PM. If you need any help, please call our office on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 70,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2093,
+      "output_tokens": 358,
+      "inr": 0.369,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-010",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "General curriculum and activities questions for Class 5 in June 2027."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-20T12:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for considering Greenfield Public School for your son. We follow the CBSE curriculum, with English as the medium of instruction, and Telugu and Hindi are taught as languages. The office will share details about the number of students per section, sports and music activities, and whether there is an entrance test on a call or during the campus visit. Admissions for Class 5 are open for the 2027-28 session, which starts on 1 June 2027. Campus visits are Monday to Saturday, 10:00 AM to 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 95,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2115,
+      "output_tokens": 398,
+      "inr": 0.39,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-011",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "grade": "UKG",
+      "phone": "8019563742",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Asks for a sibling discount and instalments; STAFF_ONLY wins over the UKG inquiry."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "sensitive_source": [
+        "keyword list (\"discount\", \"instalment\")",
+        "AI reading"
+      ],
+      "grade": "UKG",
+      "phone": "8019563742",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-23T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1251,
+      "output_tokens": 276,
+      "inr": 0.25,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-012",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Only the child's age is given, so grade is null; general question with no concrete step."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-24T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The office will guide you on the right class for your son on a call or during the campus visit. If you already know which class you are looking for, please tell us. Admissions are open for Nursery, LKG and UKG, and the next session, 2027-28, starts on 1 June 2027. You are welcome to visit the campus, Monday to Saturday, between 10:00 AM and 12:00 PM, or call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 88,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2011,
+      "output_tokens": 337,
+      "inr": 0.351,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-013",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "safety",
+      "grade": "Class 1",
+      "phone": "8978340615",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Custody-type safety concern about the father picking up the child; STAFF_ONLY wins over a mid-year relocation inquiry."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "safety",
+      "sensitive_source": [
+        "AI reading"
+      ],
+      "grade": "Class 1",
+      "phone": "8978340615",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "HIGH",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-24T12:40:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1289,
+      "output_tokens": 313,
+      "inr": 0.271,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-014",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 12",
+      "phone": "9182640357",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Class 12 is not offered."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 12",
+      "phone": "9182640357",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-28T11:50:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for contacting Greenfield Public School. We are sorry, but Class 12 is not offered at our school, so we will not be able to offer admission in Class 12 commerce. We wish your son all the very best for his studies.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 50,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2012,
+      "output_tokens": 297,
+      "inr": 0.332,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-015",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 3",
+      "phone": "9010456238",
+      "timeframe": "IMMEDIATE",
+      "language": "te-en",
+      "why": "Transfer from Vizag, wants Class 3 from the first week of December and asks when to visit."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 3",
+      "phone": "9010456238",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 11,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-27T15:10:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. You are welcome to visit the campus any day from Monday to Saturday, between 10:00 AM and 12:00 PM. Mid-year admission for the 2026-27 session is possible in Class 3 if a seat is available, and the office will confirm this with you. For any help, please call us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 75,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2048,
+      "output_tokens": 381,
+      "inr": 0.376,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-016",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": "9493270581",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Job application from a teacher."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9493270581",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-03T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1271,
+      "output_tokens": 216,
+      "inr": 0.223,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-017",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 1",
+      "phone": "7702334815",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Asks for the application form and document list to apply now for Class 1 next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 1",
+      "phone": "7702334815",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-03T11:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. Admissions for Class 1 are open for the 2027-28 session, which starts on 1 June 2027. The office will share the application form with you on a call or during the campus visit. The documents needed for Class 1 are the birth certificate of the child, two passport-size photos of the child and address proof of the parent. Campus visits are Monday to Saturday, 10:00 AM to 12:00 PM, and you can call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 92,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2051,
+      "output_tokens": 385,
+      "inr": 0.378,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-018",
+    "channel": "walk_in_note",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "grade": "Class 3",
+      "phone": "9959120437",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Discloses an ADHD diagnosis while applying for Class 3."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "sensitive_source": [
+        "keyword list (\"adhd\")",
+        "AI reading"
+      ],
+      "grade": "Class 3",
+      "phone": "9959120437",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "HIGH",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-04T16:10:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1256,
+      "output_tokens": 259,
+      "inr": 0.242,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-019",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 2",
+      "phone": "7032118946",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "General bus route and timing question for Class 2 next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 2",
+      "phone": "7032118946",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-07T15:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. Our school bus covers areas within 10 km of the campus, and the office will confirm on a call or during the campus visit whether Sai Nagar near the water tank is covered. Classes run from 8:30 AM to 3:30 PM. Admissions for Class 2 are open for the 2027-28 session, which starts on 1 June 2027. You are welcome to visit the campus, Monday to Saturday, 10:00 AM to 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 88,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2025,
+      "output_tokens": 354,
+      "inr": 0.361,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-020",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "grade": "Class 6",
+      "phone": "9705448216",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Complaint about the admission office; STAFF_ONLY wins over the Class 6 inquiry."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "sensitive_source": [
+        "keyword list (\"complaint\", \"disappointed with your\")",
+        "AI reading"
+      ],
+      "grade": "Class 6",
+      "phone": "9705448216",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "HIGH",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-11T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1294,
+      "output_tokens": 271,
+      "inr": 0.252,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-021",
+    "channel": "walk_in_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Relocating in January and wants a Saturday tour; first of two kids is UKG and the number is masked."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "MEDIUM",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 11,
+      "review_reasons": [
+        "More than one child mentioned (also Class 4)."
+      ],
+      "notes": [],
+      "needs_review": true,
+      "due_by": "2026-12-10T13:20:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for visiting Greenfield Public School. You are welcome to come for a campus tour on Saturday, between 10:00 AM and 12:00 PM. Our school bus covers areas within 10 km of the campus, and the office will confirm during your visit whether the Ramnagar side is covered. Mid-year admission for the 2026-27 session is possible in Class 4 if a seat is available. For UKG, the office will share the admission details during your visit. Office phone: 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 87,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2021,
+      "output_tokens": 380,
+      "inr": 0.372,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-022",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "Existing parent asking about bus return timing for an enrolled child."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-16T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1234,
+      "output_tokens": 236,
+      "inr": 0.229,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-023",
+    "channel": "whatsapp_voice_transcript",
+    "language": "hinglish",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Indirect request for fee help due to financial hardship after the husband's accident."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "sensitive_source": [
+        "AI reading"
+      ],
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-15T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1284,
+      "output_tokens": 236,
+      "inr": 0.234,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-024",
+    "channel": "walk_in_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 4",
+      "phone": "8500637291",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Explicitly just collecting options and will decide next year."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 4",
+      "phone": "8500637291",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-18T15:35:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for visiting Greenfield Public School. We are a CBSE school with English as the medium of instruction, and admissions are open for Class 4. Whenever you would like to know more, you are welcome to call us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM, or visit the campus, Monday to Saturday, 10:00 AM to 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 68,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2042,
+      "output_tokens": 329,
+      "inr": 0.35,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-025",
+    "channel": "whatsapp_voice_transcript",
+    "language": "te-en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "Existing parent asking about annual day practice for an enrolled child."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-21T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1255,
+      "output_tokens": 256,
+      "inr": 0.241,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-026",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 3",
+      "phone": "8885902113",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "normal next-session question; contains an instruction aimed at the AI that must be ignored"
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 3",
+      "phone": "8885902113",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [
+        "The message contains instructions aimed at the AI. They were ignored."
+      ],
+      "notes": [],
+      "needs_review": true,
+      "due_by": "2026-12-21T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The yearly fee for Class 3 is in the range of Rs 24000 to Rs 28000. Transport and books are charged separately, and exact fee details are shared during the campus visit. Yes, our school follows the CBSE board, with English as the medium of instruction. Classes run from 8:30 AM to 3:30 PM. Admissions for Class 3 are open for the 2027-28 session. You are welcome to visit the campus, Monday to Saturday, 10:00 AM to 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 95,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2136,
+      "output_tokens": 387,
+      "inr": 0.387,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-027",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "LKG",
+      "phone": null,
+      "timeframe": "LATER",
+      "language": "hinglish",
+      "why": "LKG wanted in 2029, later than the next session, and the parent says there is no hurry."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": null,
+      "timeframe": "LATER",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-24T10:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The yearly fee for LKG is in the range of Rs 18000 to Rs 22000. Transport and books are charged separately, and exact fee details are shared during the campus visit. About when LKG admissions open for 2029, the office will share the details on a call or during the campus visit. Whenever you are ready, please call us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 85,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2018,
+      "output_tokens": 363,
+      "inr": 0.364,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-028",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 8",
+      "phone": "9848217604",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Moving after Sankranti, wants Class 8 from mid-January and asks for the form and documents."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 8",
+      "phone": "9848217604",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 11,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-29T11:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. Mid-year admission for the 2026-27 session is possible in Class 8 if a seat is available. Only a few seats are left in Class 8, so the office will confirm availability. The office will share the application form on a call or during the campus visit. The documents needed are the birth certificate of the child, transfer certificate from the previous school, latest report card, two passport-size photos of the child and address proof of the parent. About the state board TC, the office will share the details on a call or during the campus visit.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 112,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2149,
+      "output_tokens": 460,
+      "inr": 0.423,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-029",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 6",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "te-en",
+      "why": "Board and language question for Class 6 next session with no concrete step."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 6",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-06T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. Our school follows the CBSE board, not the state syllabus. English is the medium of instruction, and Telugu and Hindi are taught as languages. The office will share more details about the second language on a call or during the campus visit. Admissions for Class 6 are open for the 2027-28 session, which starts on 1 June 2027.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 74,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2030,
+      "output_tokens": 359,
+      "inr": 0.363,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-030",
+    "channel": "whatsapp_text",
+    "language": "hi",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "grade": "Nursery",
+      "phone": "7386905214",
+      "timeframe": "NEXT_SESSION",
+      "language": "hi",
+      "why": "Asks for a free seat under RTE for Nursery."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "sensitive_source": [
+        "AI reading"
+      ],
+      "grade": "Nursery",
+      "phone": "7386905214",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-06T12:20:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1344,
+      "output_tokens": 300,
+      "inr": 0.27,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-031",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Complaint about unanswered calls and rude office staff while seeking Class 2 admission."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "sensitive_source": [
+        "keyword list (\"rude\")",
+        "AI reading"
+      ],
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "HIGH",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-11T13:45:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1260,
+      "output_tokens": 269,
+      "inr": 0.247,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-032",
+    "channel": "whatsapp_voice_transcript",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 7",
+      "phone": "9866214703",
+      "timeframe": "IMMEDIATE",
+      "language": "hinglish",
+      "why": "Family shifts next week and wants Class 7 admission as soon as possible plus a school visit."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 7",
+      "phone": "9866214703",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 11,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-12T11:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your message. You are welcome to visit the campus with your son, Monday to Saturday, between 10:00 AM and 12:00 PM. Our school follows the CBSE board. Mid-year admission for the 2026-27 session is possible in Class 7 if a seat is available, and the office will confirm this with you. For any help, please call us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 77,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2119,
+      "output_tokens": 375,
+      "inr": 0.379,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-033",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Nursery",
+      "phone": "7989214563",
+      "timeframe": "LATER",
+      "language": "en",
+      "why": "Admission wanted for 2028-29, later than the next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Nursery",
+      "phone": "7989214563",
+      "timeframe": "LATER",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-18T10:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The office will share details about when registration opens for the 2028-29 session and the age criteria for Nursery on a call or during the campus visit. Whenever it is convenient for you, please call us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 62,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2049,
+      "output_tokens": 321,
+      "inr": 0.347,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-034",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Spam forward with a suspicious link."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-21T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1258,
+      "output_tokens": 225,
+      "inr": 0.226,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-035",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 4",
+      "phone": "8106723459",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Bank transfer, wants Class 4 from February and asks which documents are needed."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 4",
+      "phone": "8106723459",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 11,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-18T12:42:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The documents needed are the birth certificate of the child, transfer certificate from the previous school, latest report card, two passport-size photos of the child and address proof of the parent. Mid-year admission for the 2026-27 session is possible in Class 4 if a seat is available, and the office will confirm this with you. You are welcome to visit the campus, Monday to Saturday, 10:00 AM to 12:00 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 86,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2068,
+      "output_tokens": 386,
+      "inr": 0.38,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-036",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "LKG",
+      "phone": "6301245789",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Wants a campus visit tomorrow for LKG next session; the playschool is his current school, not the grade sought."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": "6301245789",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-22T09:35:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. Campus visits are held Monday to Saturday, from 10:00 AM to 12:00 PM, so you and your wife are welcome to visit between 10:00 AM and 11:00 AM on any of these days. Admissions for LKG are open for the 2027-28 session, which starts on 1 June 2027. For any help, please call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 72,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2030,
+      "output_tokens": 340,
+      "inr": 0.354,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-037",
+    "channel": "whatsapp_text",
+    "language": "te",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "te",
+      "why": "Discloses that the child gets fits and is on medication, a medical condition."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "sensitive_source": [
+        "AI reading"
+      ],
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-27T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1372,
+      "output_tokens": 328,
+      "inr": 0.286,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-038",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Nursery",
+      "phone": "8247309561",
+      "timeframe": "NEXT_SESSION",
+      "language": "hinglish",
+      "why": "General fee and timing questions for Nursery 2027-28."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Nursery",
+      "phone": "8247309561",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-28T13:10:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The yearly fee for Nursery is in the range of Rs 18000 to Rs 22000. Transport and books are charged separately, and exact fee details are shared during the campus visit. Classes run from 8:30 AM to 3:30 PM. About lunch at school, the office will share the details on a call or during the campus visit. You can also reach us on 08612345678, Monday to Saturday, 9:00 AM to 4:30 PM.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 88,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2033,
+      "output_tokens": 370,
+      "inr": 0.369,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-039",
+    "channel": "whatsapp_voice_transcript",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "General seat, fee, timing and bus questions for UKG; no timeframe stated."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-02T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your message. Admissions are open for UKG. The yearly fee for UKG is in the range of Rs 18000 to Rs 22000. Transport and books are charged separately, and exact fee details are shared during the campus visit. Classes run from 8:30 AM to 3:30 PM. Yes, we have a school bus service covering areas within 10 km of the campus. You are welcome to visit the campus, Monday to Saturday, 10:00 AM to 12:00 PM, or call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 91,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2063,
+      "output_tokens": 360,
+      "inr": 0.367,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-040",
+    "channel": "whatsapp_text",
+    "language": "te",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te",
+      "why": "Asks to visit the campus this Saturday for UKG; session not stated."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": "HIGH",
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-04T11:00:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. Yes, you are welcome to visit the school this Saturday morning. Our campus visit slots are Monday to Saturday, from 10:00 AM to 12:00 PM, so please come any time between 10:00 AM and 12:00 PM. Admissions are open for UKG. For any help, you can call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 66,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2131,
+      "output_tokens": 387,
+      "inr": 0.386,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-041",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "Existing parent asking for a consolidated fee receipt for tax purposes."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-10T12:35:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1247,
+      "output_tokens": 254,
+      "inr": 0.239,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-042",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 11",
+      "phone": "6302591847",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Class 11 is not offered."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 11",
+      "phone": "6302591847",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-11T11:25:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for contacting Greenfield Public School. We are sorry, but Class 11 is not offered at our school, so we will not be able to offer admission in Class 11 BiPC. We wish your child all the very best for the future.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 50,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2024,
+      "output_tokens": 303,
+      "inr": 0.336,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-043",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "grade": "LKG",
+      "phone": "9701263458",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Indirectly discloses a possible speech delay; STAFF_ONLY wins over the campus visit request."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "sensitive_source": [
+        "AI reading"
+      ],
+      "grade": "LKG",
+      "phone": "9701263458",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "HIGH",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-10T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1269,
+      "output_tokens": 252,
+      "inr": 0.24,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-044",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 9",
+      "phone": "9177055682",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "General facilities question for Class 9 in 2027-28."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 9",
+      "phone": "9177055682",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-16T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The office will share details about the student-teacher ratio in Class 9, the computer lab and sports on a call or during the campus visit. We are a CBSE school, and only a few seats are left in Class 9, so the office will confirm availability with you. Campus visits are Monday to Saturday, 10:00 AM to 12:00 PM, and you can call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 82,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2057,
+      "output_tokens": 360,
+      "inr": 0.366,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-045",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": "9014438256",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Former student asking for a duplicate transfer certificate."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9014438256",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": "MEDIUM",
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-20T15:50:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 1,
+      "input_tokens": 1275,
+      "output_tokens": 235,
+      "inr": 0.233,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-046",
+    "channel": "whatsapp_text",
+    "language": "hi",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 1",
+      "phone": "9502663718",
+      "timeframe": "NEXT_SESSION",
+      "language": "hi",
+      "why": "General fee and bus question for Class 1 next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 1",
+      "phone": "9502663718",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": "MEDIUM",
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-22T09:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for your interest in Greenfield Public School. The yearly fee for Class 1 is in the range of Rs 24000 to Rs 28000. Transport and books are charged separately, and exact fee details are shared during the campus visit. Our school bus covers areas within 10 km of the campus, and the office will confirm on a call or during the campus visit whether Gandhi Nagar is covered. Admissions for Class 1 are open for the 2027-28 session, which starts on 1 June 2027.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 93,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2180,
+      "output_tokens": 395,
+      "inr": 0.395,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-047",
+    "channel": "whatsapp_voice_transcript",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 11",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "hinglish",
+      "why": "Class 11 is not offered; 10th is only the current class."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 11",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-03-01T10:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for contacting Greenfield Public School. We are sorry, but Class 11 is not offered at our school, so we will not be able to offer admission in Class 11 with science. We wish your daughter all the very best for her board exams and her future studies.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 56,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2065,
+      "output_tokens": 321,
+      "inr": 0.349,
+      "estimated": true
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-048",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 9",
+      "phone": null,
+      "timeframe": "LATER",
+      "language": "te-en",
+      "why": "Wants Class 9 for 2028-29 and is only exploring options."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 9",
+      "phone": null,
+      "timeframe": "LATER",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": "LOW",
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-03-03T10:30:00+05:30"
+    },
+    "draft": {
+      "text": "Dear Parent,\nThank you for considering Greenfield Public School. The yearly fee for Class 9 is in the range of Rs 36000 to Rs 40000. Transport and books are charged separately, and exact fee details are shared during the campus visit. Whenever you would like to know more, you are welcome to visit the campus, Monday to Saturday, 10:00 AM to 12:00 PM, or call us on 08612345678.\nAdmissions Office, Greenfield Public School",
+      "violations": [],
+      "words": 73,
+      "attempts": 1
+    },
+    "cost": {
+      "calls": 2,
+      "input_tokens": 2030,
+      "output_tokens": 357,
+      "inr": 0.362,
+      "estimated": true
+    },
+    "warnings": []
+  }
+]

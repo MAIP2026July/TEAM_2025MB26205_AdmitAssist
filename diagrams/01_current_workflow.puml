@@ -1,0 +1,45 @@
+@startuml 01_current_workflow
+' AdmitAssist - how admission inquiries are handled today (before the tool)
+' Author: G S N J Teja (2025MB26205). Version 1.0, 2 Nov 2026.
+' Based on what I have seen in my father's school office; times are estimates to be measured in Phase 0.
+title Today: one admission inquiry, no tool
+skinparam defaultFontName Arial
+skinparam shadowing false
+skinparam ActivityBorderColor #555555
+legend right
+  |= Colour |= Meaning |
+  |<#D7F5D7>| Person decides |
+  |<#F8D7DA>| Where things go wrong today |
+endlegend
+
+|Parent|
+start
+:Sends inquiry by WhatsApp, voice note,
+phone call, walk-in, web form or e-mail;
+|Front-office coordinator|
+:Message waits in the phone or inbox
+in order of arrival;
+#F8D7DA:Serious inquiry can sit behind
+casual ones (no priority);
+#D7F5D7:Reads and works out class,
+urgency and what was asked
+(about 6 min, estimate);
+if (Complaint, fee help or child's health?) then (yes)
+  |Principal|
+  #D7F5D7:Replies or calls back
+  when free (no target time);
+  stop
+else (no)
+  |Front-office coordinator|
+  #D7F5D7:Types a reply from memory;
+  #F8D7DA:Answer depends on who replies,
+  fees or dates can be wrong or promised;
+  :Sends reply on WhatsApp or calls back;
+  #F8D7DA:Writes in paper register if time
+  (often skipped in peak weeks);
+endif
+|Parent|
+:Gets reply (hours to days later);
+:Visits campus or goes elsewhere;
+stop
+@enduml

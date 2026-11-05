@@ -1,0 +1,14 @@
+{
+  "read_in_tokens": 1263,
+  "read_out_tokens": 251,
+  "draft_in_tokens": 801,
+  "draft_out_tokens": 114,
+  "draft_share": 0.63,
+  "sensitive_caught": {
+    "of": 10,
+    "by_both": 4,
+    "keyword_only": 0,
+    "ai_only": 6
+  },
+  "note": "Estimated tokens (1 per 4 Latin characters, 1 per Indic character) from the recorded run; replace with API-reported counts after the live run."
+}

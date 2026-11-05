@@ -1,0 +1,566 @@
+{
+  "_note": "SAMPLE PROFILE for the prototype. Every value below is a placeholder for a fictional school. Replace with the real school's details during onboarding. Nothing here is hard-coded in the app; the engine reads all of it at run time.",
+  "profile_version": "1.0.0",
+  "school": {
+    "name": "Greenfield Public School (sample profile)",
+    "short_name": "Greenfield",
+    "board": "CBSE",
+    "address": "12 Main Road, Sample Town",
+    "office_phone": "08612345678",
+    "office_email": "admissions@greenfield.example",
+    "office_hours": "Monday to Saturday, 9:00 AM to 4:30 PM",
+    "campus_visit_slots": "Monday to Saturday, 10:00 AM to 12:00 PM",
+    "signature": "Admissions Office, Greenfield Public School",
+    "timezone_offset_minutes": 330,
+    "office_hours_structured": {
+      "days_iso": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "09:00",
+      "end": "16:30"
+    },
+    "country_code": "91",
+    "holidays": [
+      "2027-01-14",
+      "2027-01-15",
+      "2027-01-26",
+      "2027-03-04"
+    ],
+    "_holidays_note": "SAMPLE dates. Replace with the school calendar. Reply-by times skip these days."
+  },
+  "admission_cycle": {
+    "current_session_label": "2026-27",
+    "next_session_label": "2027-28",
+    "next_session_start": "2027-06-01",
+    "mid_year_admission_open": true,
+    "mid_year_note": "Mid-year admission for 2026-27 is possible in Class 1 to Class 8 if a seat is available.",
+    "seat_status_applies_to": "next_session"
+  },
+  "grades": [
+    {
+      "code": "NUR",
+      "label": "Nursery",
+      "aliases": [
+        "nursery",
+        "pre-kg",
+        "prekg",
+        "pre kg",
+        "playgroup",
+        "play group",
+        "play school",
+        "pp1"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "pre_primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "LKG",
+      "label": "LKG",
+      "aliases": [
+        "lkg",
+        "l.k.g",
+        "lower kg",
+        "pp2",
+        "junior kg",
+        "jr kg"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "pre_primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "UKG",
+      "label": "UKG",
+      "aliases": [
+        "ukg",
+        "u.k.g",
+        "upper kg",
+        "senior kg",
+        "sr kg"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "pre_primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C1",
+      "label": "Class 1",
+      "aliases": [
+        "class 1",
+        "grade 1",
+        "1st class",
+        "1st std",
+        "first class",
+        "1st standard",
+        "1 class",
+        "std 1"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C2",
+      "label": "Class 2",
+      "aliases": [
+        "class 2",
+        "class ii",
+        "grade 2",
+        "2nd class",
+        "2nd std",
+        "second class",
+        "2nd standard",
+        "2 class",
+        "std 2"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C3",
+      "label": "Class 3",
+      "aliases": [
+        "class 3",
+        "class iii",
+        "grade 3",
+        "3rd class",
+        "3rd std",
+        "third class",
+        "3rd standard",
+        "3 class",
+        "std 3"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C4",
+      "label": "Class 4",
+      "aliases": [
+        "class 4",
+        "class iv",
+        "grade 4",
+        "4th class",
+        "4th std",
+        "fourth class",
+        "4th standard",
+        "4 class",
+        "std 4"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C5",
+      "label": "Class 5",
+      "aliases": [
+        "class 5",
+        "class v",
+        "grade 5",
+        "5th class",
+        "5th std",
+        "fifth class",
+        "5th standard",
+        "5 class",
+        "std 5"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "primary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C6",
+      "label": "Class 6",
+      "aliases": [
+        "class 6",
+        "class vi",
+        "grade 6",
+        "6th class",
+        "6th std",
+        "sixth class",
+        "6th standard",
+        "6 class",
+        "std 6"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "middle",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C7",
+      "label": "Class 7",
+      "aliases": [
+        "class 7",
+        "class vii",
+        "grade 7",
+        "7th class",
+        "7th std",
+        "seventh class",
+        "7th standard",
+        "7 class",
+        "std 7"
+      ],
+      "offered": true,
+      "seat_status": "open",
+      "fee_band": "middle",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C8",
+      "label": "Class 8",
+      "aliases": [
+        "class 8",
+        "class viii",
+        "grade 8",
+        "8th class",
+        "8th std",
+        "eighth class",
+        "8th standard",
+        "8 class",
+        "std 8"
+      ],
+      "offered": true,
+      "seat_status": "limited",
+      "fee_band": "middle",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C9",
+      "label": "Class 9",
+      "aliases": [
+        "class 9",
+        "class ix",
+        "grade 9",
+        "9th class",
+        "9th std",
+        "ninth class",
+        "9th standard",
+        "9 class",
+        "std 9"
+      ],
+      "offered": true,
+      "seat_status": "limited",
+      "fee_band": "secondary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C10",
+      "label": "Class 10",
+      "aliases": [
+        "class 10",
+        "class x",
+        "grade 10",
+        "10th class",
+        "10th std",
+        "tenth class",
+        "10th standard",
+        "10 class",
+        "std 10",
+        "ssc"
+      ],
+      "offered": true,
+      "seat_status": "closed",
+      "fee_band": "secondary",
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C11",
+      "label": "Class 11",
+      "aliases": [
+        "class 11",
+        "class xi",
+        "grade 11",
+        "11th class",
+        "11th std",
+        "first year inter",
+        "1st year inter",
+        "inter 1st year",
+        "junior inter",
+        "intermediate",
+        "inter first year",
+        "inter 1st year",
+        "first year intermediate"
+      ],
+      "offered": false,
+      "seat_status": "not_offered",
+      "fee_band": null,
+      "_seat_status_applies_to": "next_session"
+    },
+    {
+      "code": "C12",
+      "label": "Class 12",
+      "aliases": [
+        "class 12",
+        "class xii",
+        "grade 12",
+        "12th class",
+        "12th std",
+        "second year inter",
+        "2nd year inter",
+        "senior inter",
+        "inter second year",
+        "inter 2nd year",
+        "second year intermediate"
+      ],
+      "offered": false,
+      "seat_status": "not_offered",
+      "fee_band": null,
+      "_seat_status_applies_to": "next_session"
+    }
+  ],
+  "fees": {
+    "disclosure_mode": "range",
+    "_disclosure_modes": "none = never mention amounts, range = may quote the yearly range below, exact = may quote exact amounts (not used in V1)",
+    "currency": "INR",
+    "bands": {
+      "pre_primary": {
+        "label": "Nursery to UKG",
+        "yearly_min": 18000,
+        "yearly_max": 22000
+      },
+      "primary": {
+        "label": "Class 1 to Class 5",
+        "yearly_min": 24000,
+        "yearly_max": 28000
+      },
+      "middle": {
+        "label": "Class 6 to Class 8",
+        "yearly_min": 30000,
+        "yearly_max": 34000
+      },
+      "secondary": {
+        "label": "Class 9 and Class 10",
+        "yearly_min": 36000,
+        "yearly_max": 40000
+      }
+    },
+    "note_for_replies": "Transport and books are charged separately. Exact fee details are shared during the campus visit."
+  },
+  "documents_required": [
+    "Birth certificate of the child",
+    "Transfer certificate from the previous school (Class 2 and above)",
+    "Latest report card (Class 2 and above)",
+    "Two passport-size photos of the child",
+    "Address proof of the parent"
+  ],
+  "facts_allowed_in_replies": [
+    "School bus service covers areas within 10 km of the campus.",
+    "Classes run from 8:30 AM to 3:30 PM.",
+    "English is the medium of instruction; Telugu and Hindi are taught as languages."
+  ],
+  "priority_rules": {
+    "_comment": "Points used by the deterministic scorer. The AI only reports signals with quoted evidence; these rules turn signals into a priority. Edit here, no code change needed.",
+    "points": {
+      "base_admission_inquiry": 1,
+      "timeframe_immediate": 4,
+      "wants_campus_visit": 4,
+      "asks_application_or_documents": 4,
+      "follow_up_on_earlier_message": 4,
+      "relocation_or_transfer": 1,
+      "sibling_in_school": 1,
+      "grade_identified_and_offered": 1,
+      "timeframe_later_than_next_session": -4,
+      "explicitly_exploratory": -3,
+      "grade_not_offered": -6
+    },
+    "high_threshold": 4,
+    "low_threshold": 0,
+    "_bands": "score >= high_threshold -> HIGH; score <= low_threshold -> LOW; otherwise MEDIUM",
+    "immediate_window_days": 60,
+    "disagreement_policy": "take_higher",
+    "_disagreement_note": "If the AI's own suggested priority is higher than the rules' result, the higher one is used and the card says so.",
+    "low_allowed_only_when_confidence": "HIGH",
+    "_low_note": "If overall confidence is not HIGH, a LOW result is raised to MEDIUM and marked Needs review.",
+    "not_admission_min_intent_confidence": 0.8
+  },
+  "sensitive_topics": {
+    "_comment": "Any hit routes the inquiry to staff with no AI draft. The keyword list is a deterministic safety net that runs BEFORE and AFTER the AI step.",
+    "categories": {
+      "complaint": [
+        "complaint",
+        "complain",
+        "worst",
+        "rude",
+        "harass",
+        "bully",
+        "bullied",
+        "beaten",
+        "beat my",
+        "slapped",
+        "unfair",
+        "disappointed with your",
+        "very bad experience",
+        "legal action",
+        "consumer court"
+      ],
+      "fee_concession": [
+        "concession",
+        "scholarship",
+        "discount",
+        "fee waiver",
+        "waive",
+        "cannot afford",
+        "can't afford",
+        "cant afford",
+        "installment",
+        "instalment",
+        "financial problem",
+        "financial difficulty",
+        "lost my job",
+        "rte quota",
+        "rte seat",
+        "ews quota",
+        "free seat"
+      ],
+      "special_needs": [
+        "autism",
+        "autistic",
+        "adhd",
+        "dyslexia",
+        "special needs",
+        "special child",
+        "disability",
+        "disabled",
+        "learning difficulty",
+        "speech delay",
+        "hearing problem",
+        "wheelchair",
+        "epilepsy",
+        "seizure",
+        "medical condition",
+        "slow learner",
+        "down syndrome",
+        "cerebral palsy"
+      ],
+      "safety": [
+        "unsafe",
+        "abuse",
+        "abused",
+        "touched",
+        "threat",
+        "custody",
+        "court order",
+        "do not give child to",
+        "don't hand over"
+      ]
+    }
+  },
+  "response_targets_working_hours": {
+    "HIGH": 2,
+    "MEDIUM": 8,
+    "LOW": 24,
+    "STAFF_ONLY": 8,
+    "NOT_ADMISSION": 24,
+    "NEEDS_REVIEW": 2
+  },
+  "confidence": {
+    "self_rating_high_min": 0.8,
+    "self_rating_medium_min": 0.5,
+    "key_fields": [
+      "grade",
+      "timeframe",
+      "intent"
+    ],
+    "quote_min_word_share": 0.8
+  },
+  "reply": {
+    "language_default": "en",
+    "max_words": 120,
+    "tone": "warm, polite, short, like a helpful school office person on WhatsApp",
+    "must_not": [
+      "promise a seat or admission",
+      "mention any fee amount not listed in this profile",
+      "mention any date, time or phone number not listed in this profile",
+      "comment on the child's ability, health or background",
+      "use emojis"
+    ],
+    "max_regenerations_per_inquiry": 3,
+    "language_policy": "english_always",
+    "_language_policy_values": "english_always (V1) | match_parent (V2, after Telugu/Hindi checks are built)",
+    "auto_regenerate_on_violation": 1,
+    "blocked_phrases": [
+      "seat is confirmed",
+      "seat confirmed",
+      "admission is confirmed",
+      "admission confirmed",
+      "confirm your seat",
+      "confirm the seat",
+      "guarantee",
+      "guaranteed",
+      "assure you a seat",
+      "assured seat",
+      "reserved for you",
+      "definitely get",
+      "100%",
+      "discount",
+      "concession",
+      "free of cost",
+      "waive"
+    ],
+    "greeting": "Dear Parent,",
+    "drafting_enabled": true,
+    "_years_note": "Years allowed in drafts are derived from admission_cycle (current and next session start years) plus any year the parent wrote."
+  },
+  "llm": {
+    "_comment": "Any OpenAI-compatible chat-completions endpoint works. The API key is never stored in this file.",
+    "base_url": "https://api.openai.com/v1",
+    "model_primary": "gpt-6.1-terra",
+    "model_fallback": "gpt-6.1-sol",
+    "max_read_attempts": 2,
+    "timeout_seconds": 20,
+    "temperature": 0.2,
+    "max_tokens_param": "max_completion_tokens",
+    "max_output_tokens_read": 600,
+    "max_output_tokens_draft": 400,
+    "price_per_million_tokens_usd": {
+      "gpt-6.1-terra": {
+        "input": 1.0,
+        "output": 5.0
+      },
+      "gpt-6.1-sol": {
+        "input": 2.0,
+        "output": 10.0
+      },
+      "gpt-6-luna": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "gemini-3.1-flash-lite": {
+        "input": 0.25,
+        "output": 1.5
+      }
+    },
+    "usd_to_inr": 95,
+    "monthly_ai_cap_inr": 500,
+    "_monthly_cap_note": "AI calls stop for the month when this school has spent this much; messages then go to Needs review.",
+    "_model_note": "Phase 1: replace model names with the dated snapshot names from the provider model list (for example gpt-6.1-terra-YYYY-MM-DD) so the model cannot change silently."
+  },
+  "privacy": {
+    "mask_phone_and_email_before_ai": true,
+    "retention_days_after_session_start": 180,
+    "store_raw_text": true,
+    "_fixed_note": "mask_phone_and_email_before_ai is fixed to true in V1; retention must be 30 to 365 days."
+  },
+  "review": {
+    "fast_approval_seconds": 10,
+    "_note": "Approvals faster than this are flagged as possible rubber-stamping."
+  }
+}

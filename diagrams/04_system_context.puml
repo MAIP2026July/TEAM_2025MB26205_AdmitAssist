@@ -1,0 +1,24 @@
+@startuml 04_system_context
+' C4 level 1 (system context) drawn with plain PlantUML shapes. Author: G S N J Teja (2025MB26205). v1.0
+title AdmitAssist V1 - system context
+skinparam defaultFontName Arial
+skinparam shadowing false
+left to right direction
+actor "Parent\n(prospective)" as parent
+actor "Front-office\ncoordinator" as coord
+actor "Principal" as principal
+actor "School owner\n(buyer)" as owner
+rectangle "WhatsApp / phone / e-mail\n(school's existing accounts)" as channels #EEEEEE
+rectangle "AdmitAssist\n(V1 web app)" as aa #DDEEFF
+rectangle "AI model service\n(OpenAI-compatible API,\ncontracted by me)" as ai #FFE0B2
+parent --> channels : sends inquiry
+channels --> coord : coordinator reads it
+coord --> aa : pastes message, approves reply
+aa --> ai : masked message (no phone, no e-mail)
+ai --> aa : JSON reading, draft text
+aa --> coord : priority, reasons, draft, checks
+coord --> channels : sends approved reply
+channels --> parent : reply
+aa --> principal : staff-only cases (shown in queue)
+owner --> aa : approves school settings,\npays monthly
+@enduml

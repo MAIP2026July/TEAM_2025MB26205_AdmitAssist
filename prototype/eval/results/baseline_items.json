@@ -1,0 +1,1984 @@
+[
+  {
+    "id": "INQ-001",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": "9346508172",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Vendor sales pitch; the discount is the vendor's offer, not a fee request."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "sensitive_source": [
+        "keyword list (\"discount\")"
+      ],
+      "grade": null,
+      "phone": "9346508172",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-05T10:45:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-002",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Bare request with no grade or timeframe, so staff must ask for details."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-07T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-003",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 11",
+      "phone": "9666304172",
+      "timeframe": "NEXT_SESSION",
+      "language": "te-en",
+      "why": "Inter first year (Class 11) is not offered; 10th is only the current class."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 11",
+      "phone": "9666304172",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-12T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-004",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 6",
+      "phone": "9845123760",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Job transfer from Bengaluru and wants to join Class 6 in December, within 60 days."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 6",
+      "phone": "9845123760",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 7,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-09T11:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-005",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "LKG",
+      "phone": "9391876024",
+      "timeframe": "NEXT_SESSION",
+      "language": "hinglish",
+      "why": "Two children (LKG and Class 5), grade is the first child mentioned (LKG); general fee and transport questions for next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": "9391876024",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [
+        "More than one child mentioned (also Class 5)."
+      ],
+      "notes": [],
+      "needs_review": true,
+      "due_by": "2026-11-12T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-006",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Existing parent asking about homework for an enrolled child."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-17T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-007",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Follow-up chasing an earlier unanswered inquiry; no grade or number given."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-16T11:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-008",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "grade": "LKG",
+      "phone": "9441782350",
+      "timeframe": "NEXT_SESSION",
+      "language": "te-en",
+      "why": "Indirect complaint that a teacher scolded the elder son in public; STAFF_ONLY wins over the LKG inquiry."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": "9441782350",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-18T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-009",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Nursery",
+      "phone": "9963048127",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Asks to book a campus visit slot for Nursery in the 2027-28 session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Nursery",
+      "phone": "9963048127",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-17T11:05:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-010",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "General curriculum and activities questions for Class 5 in June 2027."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-20T12:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-011",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "grade": "UKG",
+      "phone": "8019563742",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Asks for a sibling discount and instalments; STAFF_ONLY wins over the UKG inquiry."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "sensitive_source": [
+        "keyword list (\"discount\", \"instalment\")"
+      ],
+      "grade": "Class 3",
+      "phone": "8019563742",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-23T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-012",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Only the child's age is given, so grade is null; general question with no concrete step."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-24T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-013",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "safety",
+      "grade": "Class 1",
+      "phone": "8978340615",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Custody-type safety concern about the father picking up the child; STAFF_ONLY wins over a mid-year relocation inquiry."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 1",
+      "phone": "8978340615",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 10,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-23T14:10:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-014",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 12",
+      "phone": "9182640357",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Class 12 is not offered."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9182640357",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-26T10:50:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-015",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 3",
+      "phone": "9010456238",
+      "timeframe": "IMMEDIATE",
+      "language": "te-en",
+      "why": "Transfer from Vizag, wants Class 3 from the first week of December and asks when to visit."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 3",
+      "phone": "9010456238",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-11-28T13:40:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-016",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": "9493270581",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Job application from a teacher."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9493270581",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-03T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-017",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 1",
+      "phone": "7702334815",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Asks for the application form and document list to apply now for Class 1 next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 1",
+      "phone": "7702334815",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-03T11:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-018",
+    "channel": "walk_in_note",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "grade": "Class 3",
+      "phone": "9959120437",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Discloses an ADHD diagnosis while applying for Class 3."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "sensitive_source": [
+        "keyword list (\"adhd\")"
+      ],
+      "grade": "Class 3",
+      "phone": "9959120437",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-04T16:10:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-019",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 2",
+      "phone": "7032118946",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "General bus route and timing question for Class 2 next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 2",
+      "phone": "7032118946",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-07T15:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-020",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "grade": "Class 6",
+      "phone": "9705448216",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Complaint about the admission office; STAFF_ONLY wins over the Class 6 inquiry."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "sensitive_source": [
+        "keyword list (\"complaint\", \"disappointed with your\")"
+      ],
+      "grade": "Class 6",
+      "phone": "9705448216",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-11T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-021",
+    "channel": "walk_in_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Relocating in January and wants a Saturday tour; first of two kids is UKG and the number is masked."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 7,
+      "review_reasons": [
+        "More than one child mentioned (also Class 4)."
+      ],
+      "notes": [],
+      "needs_review": true,
+      "due_by": "2026-12-10T13:20:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-022",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "Existing parent asking about bus return timing for an enrolled child."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-14T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-023",
+    "channel": "whatsapp_voice_transcript",
+    "language": "hinglish",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Indirect request for fee help due to financial hardship after the husband's accident."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 5",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-15T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-024",
+    "channel": "walk_in_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 4",
+      "phone": "8500637291",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Explicitly just collecting options and will decide next year."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 4",
+      "phone": "8500637291",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-18T15:35:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-025",
+    "channel": "whatsapp_voice_transcript",
+    "language": "te-en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "Existing parent asking about annual day practice for an enrolled child."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-18T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-026",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 3",
+      "phone": "8885902113",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "normal next-session question; contains an instruction aimed at the AI that must be ignored"
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 3",
+      "phone": "8885902113",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-21T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-027",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "LKG",
+      "phone": null,
+      "timeframe": "LATER",
+      "language": "hinglish",
+      "why": "LKG wanted in 2029, later than the next session, and the parent says there is no hurry."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": null,
+      "timeframe": "LATER",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-24T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-028",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 8",
+      "phone": "9848217604",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Moving after Sankranti, wants Class 8 from mid-January and asks for the form and documents."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 8",
+      "phone": "9848217604",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2026-12-29T11:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-029",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 6",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "te-en",
+      "why": "Board and language question for Class 6 next session with no concrete step."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 6",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-06T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-030",
+    "channel": "whatsapp_text",
+    "language": "hi",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "fee_concession",
+      "grade": "Nursery",
+      "phone": "7386905214",
+      "timeframe": "NEXT_SESSION",
+      "language": "hi",
+      "why": "Asks for a free seat under RTE for Nursery."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "7386905214",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-06T12:20:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-031",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Complaint about unanswered calls and rude office staff while seeking Class 2 admission."
+    },
+    "predicted": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "complaint",
+      "sensitive_source": [
+        "keyword list (\"rude\")"
+      ],
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-11T13:45:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-032",
+    "channel": "whatsapp_voice_transcript",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 7",
+      "phone": "9866214703",
+      "timeframe": "IMMEDIATE",
+      "language": "hinglish",
+      "why": "Family shifts next week and wants Class 7 admission as soon as possible plus a school visit."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 7",
+      "phone": "9866214703",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-12T11:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-033",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Nursery",
+      "phone": "7989214563",
+      "timeframe": "LATER",
+      "language": "en",
+      "why": "Admission wanted for 2028-29, later than the next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Nursery",
+      "phone": "7989214563",
+      "timeframe": "LATER",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-18T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-034",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "hinglish",
+      "why": "Spam forward with a suspicious link."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-21T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-035",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "Class 4",
+      "phone": "8106723459",
+      "timeframe": "IMMEDIATE",
+      "language": "en",
+      "why": "Bank transfer, wants Class 4 from February and asks which documents are needed."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 4",
+      "phone": "8106723459",
+      "timeframe": "IMMEDIATE",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 11,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-18T12:42:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-036",
+    "channel": "phone_call_note",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "LKG",
+      "phone": "6301245789",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Wants a campus visit tomorrow for LKG next session; the playschool is his current school, not the grade sought."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": "6301245789",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-22T09:35:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-037",
+    "channel": "whatsapp_text",
+    "language": "te",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "grade": "Class 2",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "te",
+      "why": "Discloses that the child gets fits and is on medication, a medical condition."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-27T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-038",
+    "channel": "whatsapp_text",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Nursery",
+      "phone": "8247309561",
+      "timeframe": "NEXT_SESSION",
+      "language": "hinglish",
+      "why": "General fee and timing questions for Nursery 2027-28."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Nursery",
+      "phone": "8247309561",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-01-28T13:10:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-039",
+    "channel": "whatsapp_voice_transcript",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "General seat, fee, timing and bus questions for UKG; no timeframe stated."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-02T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-040",
+    "channel": "whatsapp_text",
+    "language": "te",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "grade": "UKG",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te",
+      "why": "Asks to visit the campus this Saturday for UKG; session not stated."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-05T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-041",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "language": "te-en",
+      "why": "Existing parent asking for a consolidated fee receipt for tax purposes."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-08T11:35:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-042",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 11",
+      "phone": "6302591847",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Class 11 is not offered."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 11",
+      "phone": "6302591847",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-11T11:25:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-043",
+    "channel": "whatsapp_text",
+    "language": "en",
+    "gold": {
+      "route": "STAFF_ONLY",
+      "priority": null,
+      "sensitive_category": "special_needs",
+      "grade": "LKG",
+      "phone": "9701263458",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "Indirectly discloses a possible speech delay; STAFF_ONLY wins over the campus visit request."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "HIGH",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "LKG",
+      "phone": "9701263458",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "HIGH",
+      "ai_priority": null,
+      "score": 6,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-09T11:00:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-044",
+    "channel": "web_form",
+    "language": "en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 9",
+      "phone": "9177055682",
+      "timeframe": "NEXT_SESSION",
+      "language": "en",
+      "why": "General facilities question for Class 9 in 2027-28."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9177055682",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-16T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-045",
+    "channel": "email",
+    "language": "en",
+    "gold": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "grade": null,
+      "phone": "9014438256",
+      "timeframe": "UNSPECIFIED",
+      "language": "en",
+      "why": "Former student asking for a duplicate transfer certificate."
+    },
+    "predicted": {
+      "route": "NOT_ADMISSION",
+      "priority": null,
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9014438256",
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": null,
+      "ai_priority": null,
+      "score": null,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-20T15:50:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-046",
+    "channel": "whatsapp_text",
+    "language": "hi",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "grade": "Class 1",
+      "phone": "9502663718",
+      "timeframe": "NEXT_SESSION",
+      "language": "hi",
+      "why": "General fee and bus question for Class 1 next session."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "MEDIUM",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": null,
+      "phone": "9502663718",
+      "timeframe": "NEXT_SESSION",
+      "overall_confidence": "HIGH",
+      "rule_priority": "MEDIUM",
+      "ai_priority": null,
+      "score": 1,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-02-22T09:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-047",
+    "channel": "whatsapp_voice_transcript",
+    "language": "hinglish",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 11",
+      "phone": null,
+      "timeframe": "NEXT_SESSION",
+      "language": "hinglish",
+      "why": "Class 11 is not offered; 10th is only the current class."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 11",
+      "phone": null,
+      "timeframe": "UNSPECIFIED",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -5,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-03-01T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  },
+  {
+    "id": "INQ-048",
+    "channel": "whatsapp_text",
+    "language": "te-en",
+    "gold": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "grade": "Class 9",
+      "phone": null,
+      "timeframe": "LATER",
+      "language": "te-en",
+      "why": "Wants Class 9 for 2028-29 and is only exploring options."
+    },
+    "predicted": {
+      "route": "PRIORITY",
+      "priority": "LOW",
+      "sensitive_category": null,
+      "sensitive_source": [],
+      "grade": "Class 9",
+      "phone": null,
+      "timeframe": "LATER",
+      "overall_confidence": "HIGH",
+      "rule_priority": "LOW",
+      "ai_priority": null,
+      "score": -2,
+      "review_reasons": [],
+      "notes": [],
+      "needs_review": false,
+      "due_by": "2027-03-03T10:30:00+05:30"
+    },
+    "draft": null,
+    "cost": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "inr": 0,
+      "estimated": false
+    },
+    "warnings": []
+  }
+]

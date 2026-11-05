@@ -1,0 +1,122 @@
+@startuml 02_target_workflow_v1
+' AdmitAssist V1 - target workflow for one inquiry, with every AI step, check and human decision marked.
+' Author: G S N J Teja (2025MB26205). Version 1.1, 2 Nov 2026. Matches engine 1.1.1, prompts read_v1/draft_v1.
+title AdmitAssist V1: one admission inquiry, end to end
+skinparam defaultFontName Arial
+skinparam shadowing false
+skinparam ActivityBorderColor #555555
+skinparam NoteBackgroundColor #FFFDE7
+legend right
+  |= Colour |= Step type |
+  |<#DDEEFF>| Rule: same input gives the same output every time |
+  |<#FFE0B2>| AI model: answer always comes back, its quality can vary |
+  |<#D7F5D7>| Person decides |
+  |<#F8D7DA>| Stop point: AI output is not used |
+endlegend
+
+|Parent|
+start
+:Sends inquiry (WhatsApp, voice note,
+call, walk-in, web form, e-mail);
+|Front-office coordinator|
+#D7F5D7:H1 Pastes the message, or types notes
+for a call or walk-in (about 20 s);
+|AdmitAssist rules|
+#DDEEFF:R1 Find and hide mobile, landline and
+other phone numbers and e-mails (fixed pattern);
+#DDEEFF:R2 Sensitive-word check
+(complaint, fee help, health, safety);
+#DDEEFF:R3 Class patterns
+("5th std", "UKG", "class IX");
+|AdmitAssist AI model|
+#FFE0B2:AI1 Read the masked message.
+Return JSON: class, timeframe, signals,
+sensitive yes/no, quoted words, confidence;
+note right
+  Quality uncertain here:
+  mixed Telugu/Hindi/English,
+  voice-note transcripts,
+  indirect wording.
+  About 1,260 tokens in, 250 out,
+  Rs 0.24, 2-5 s (estimates).
+end note
+|AdmitAssist rules|
+if (Valid JSON within 2 tries?) then (no)
+  #F8D7DA:Show "Read it yourself",
+  reply-by = 2 working hours;
+  |Front-office coordinator|
+  #D7F5D7:Reads and replies personally;
+  stop
+else (yes)
+endif
+#DDEEFF:R4 Check every quoted word is in the message,
+drop signals without proof, compare class with R3,
+set confidence Sure / Check / Not sure;
+if (Sensitive by R2 or AI1?) then (yes)
+  #F8D7DA:Staff only. No AI draft.
+  Reply-by = 8 working hours;
+  |Principal|
+  #D7F5D7:H2 Coordinator or principal
+  replies personally;
+  stop
+else (no)
+endif
+|AdmitAssist rules|
+if (AI sure it is not an admission inquiry, intent 0.8 or more?) then (yes)
+  #DDEEFF:Mark "Not admission", no draft;
+  |Front-office coordinator|
+  #D7F5D7:Passes it to the right person;
+  stop
+else (no or unsure)
+endif
+|AdmitAssist rules|
+#DDEEFF:R5 Priority points from settings
+(soon +4, visit +4, form +4, follow-up +4,
+later -4, exploring -3, class not offered -6);
+#DDEEFF:R6 If AI suggests higher, use higher.
+LOW only when confidence is Sure,
+otherwise MEDIUM + Needs review;
+#DDEEFF:R7 Reply-by time: HIGH 2 h, MEDIUM 8 h,
+LOW 24 h (working hours);
+|AdmitAssist AI model|
+#FFE0B2:AI2 Write draft reply using only
+facts from the school settings;
+note right
+  Quality uncertain here:
+  may add a fact, a promise or an amount.
+  About 800 tokens in, 115 out,
+  Rs 0.13, 2-4 s (estimates).
+end note
+|AdmitAssist rules|
+#DDEEFF:R8 Check draft: word limit, blocked promises,
+amounts, phone numbers, times, months, emojis;
+if (Checks pass?) then (no)
+  #FFE0B2:AI2 again once with the list of problems;
+  #DDEEFF:R8 check again;
+  note right
+    Still failing after one retry:
+    draft shown with a red
+    "Do not send as it is" list
+  end note
+else (yes)
+endif
+|Front-office coordinator|
+#D7F5D7:H3 Sees queue sorted by reply-by time.
+Opens card: priority + reasons + quotes,
+confidence, draft, check results;
+if (Draft acceptable?) then (edit / approve)
+  #D7F5D7:Edits if needed, approves.
+  Copy or open WhatsApp with text;
+else (reject)
+  #D7F5D7:Writes own reply or asks
+  "Write again" (max 3);
+endif
+#D7F5D7:H4 Presses Send in WhatsApp
+(the tool cannot send);
+#DDEEFF:R9 Log: action, edit size,
+seconds on card, on time or late;
+|Parent|
+:Gets a correct reply,
+HIGH within 2 working hours;
+stop
+@enduml
